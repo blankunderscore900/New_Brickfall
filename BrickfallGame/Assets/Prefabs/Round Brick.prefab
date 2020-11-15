@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4991134695973055914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6379468739313127425}
+  - component: {fileID: 4139106895223277136}
+  - component: {fileID: 7561416082236817082}
+  - component: {fileID: 1129162548963918491}
+  - component: {fileID: 7367291752555337312}
+  m_Layer: 0
+  m_Name: Round Brick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6379468739313127425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991134695973055914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4139106895223277136
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991134695973055914}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7561416082236817082
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991134695973055914}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &1129162548963918491
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991134695973055914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7367291752555337312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991134695973055914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dddaecfeeaa2f244e8a7c25fc1d84c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  green: {r: 0, g: 1, b: 0.06589508, a: 0}
+  yellow: {r: 0.99285424, g: 1, b: 0, a: 0}
+  orange: {r: 1, g: 0.6383666, b: 0, a: 0}
+  red: {r: 1, g: 0, b: 0, a: 0}
+  blue: {r: 0, g: 0.18460202, b: 1, a: 0}
+  indestructable: 1
+  hitsToBreak: 0
+  oneHitBrickParticles: {fileID: 7636287030584891298, guid: 23deb3562088d464fa65b5bca84a7e6f,
+    type: 3}
+  twoHitBrickParticles: {fileID: 7395263519883434579, guid: 0579cbef655d5b848afe1c53510aa43b,
+    type: 3}
+  threeHitBrickParticles: {fileID: 6294556390553357965, guid: 44b9f4ba94e841f47978ba54b0878b8f,
+    type: 3}
+  fourHitBrickParticles: {fileID: 4002343403144770717, guid: 894e534a05874b0419aa6a2e0dccd566,
+    type: 3}
+  indestructableBrickParticles: {fileID: 6484901033250914626, guid: a60870c6ad82fb04fb12c570be62de24,
+    type: 3}
+  powerup1: {fileID: 0}
+  powerup2: {fileID: 0}
+  powerup3: {fileID: 0}
+  powerup4: {fileID: 0}
+  powerup5: {fileID: 0}
+  powerup6: {fileID: 0}
+  powerup7: {fileID: 0}
+  powerup8: {fileID: 0}
+  powerup9: {fileID: 0}
+  purpleDebris: {fileID: 0}
+  points: 0
